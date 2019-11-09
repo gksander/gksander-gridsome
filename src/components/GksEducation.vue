@@ -14,10 +14,12 @@
         'mb-6': i !== $static.allDegree.edges.length - 1,
       }"
     >
-      <div class="px-2">
-        <div class="h-12 w-12 border rounded-full p-1">
-          <g-image :src="edge.node.image" alt="Degree logo"></g-image>
-        </div>
+      <div class="px-2 flex-none hidden sm:block">
+        <g-image
+          :src="edge.node.image"
+          alt="Degree logo"
+          class="border rounded-full p-1 w-12 h-12"
+        ></g-image>
       </div>
       <div class="flex-grow px-2">
         <div class="font-bold text-primary-900 leading-tight">
@@ -44,7 +46,7 @@ query {
         title
         from
         description
-        image (width: 65, height: 65, fit: contain, background: "transparent")
+        image (width: 100, height: 100, fit: contain, background: "transparent")
       }
     }
   }

@@ -3,7 +3,10 @@
     <g-image
       src="~/assets/img/headshot.jpg"
       alt="Grant's headshot"
-      class="h-24 w-24 rounded-full shadow-md"
+      class="rounded-full shadow-md"
+      width="125"
+      height="125"
+      quality="95"
     />
     <h1 class="text-5xl font-thin">Grant Sander</h1>
     <h2 class="text-2xl leading-none text-gray-700">Fullstack Developer</h2>
