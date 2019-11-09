@@ -4,15 +4,10 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import GksSectionTitle from "~/components/GksSectionTitle";
 import "./styles/global.css";
+require("typeface-open-sans");
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   Vue.component("GksSectionTitle", GksSectionTitle);
-
-  head.link.push({
-    rel: "stylesheet",
-    href:
-      "https://fonts.googleapis.com/css?family=Raleway:100,300,700&display=swap",
-  });
 }
