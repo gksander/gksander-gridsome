@@ -126,6 +126,25 @@ module.exports = function(api) {
         alt: "PostgreSQL Logo",
       },
     ].forEach(tool => backendTools.addNode(tool));
+
+    /**
+     * Education
+     */
+    const degrees = addCollection("Degree");
+    [
+      {
+        title: `M.A. Mathematics`,
+        from: `Arizona State University`,
+        description: `4.0 GPA. Focus on theoretical mathematics, math instruction.`,
+        image: require.resolve("./src/assets/img/asu.png"),
+      },
+      {
+        title: `B.S. Mathematics`,
+        from: `Arizona State University`,
+        description: `4.0 GPA. Focus on theoretical and computational mathematics.`,
+        image: require.resolve("./src/assets/img/asu.png"),
+      },
+    ].forEach(degree => degrees.addNode(degree));
   }); // End loadSources
 
   api.createPages(({ createPage }) => {
