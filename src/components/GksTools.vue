@@ -3,7 +3,7 @@
     <!-- Title -->
     <gks-section-title
       title="Preferred Tools"
-      subtitle="Tools I like and regularly use"
+      subtitle="Tools I like and regularly use."
     ></gks-section-title>
     <div
       v-for="(edge, i) in $static.allTool.edges"

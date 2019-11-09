@@ -3,7 +3,7 @@
     <!-- Title -->
     <gks-section-title
       title="Projects"
-      subtitle="Some projects I've worked on"
+      subtitle="Some projects I've worked on."
     ></gks-section-title>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda cum
