@@ -2,6 +2,7 @@
   <Layout>
     <!-- Header image/title -->
     <gks-title></gks-title>
+    <gks-background></gks-background>
     <gks-experience></gks-experience>
     <gks-tools></gks-tools>
     <gks-projects></gks-projects>
@@ -17,10 +18,12 @@ import GksTools from "~/components/GksTools";
 import GksProjects from "~/components/GksProjects";
 import GksEducation from "~/components/GksEducation";
 import GksContact from "~/components/GksContact";
+import GksBackground from "../components/GksBackground";
 
 export default {
   components: {
     GksTitle,
+    GksBackground,
     GksExperience,
     GksTools,
     GksProjects,

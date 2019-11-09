@@ -90,6 +90,46 @@ module.exports = function(api) {
     ].forEach(tool => tools.addNode(tool));
 
     /**
+     * Projects
+     */
+    const projects = addCollection("Project");
+    [
+      {
+        title: "ArtisanHD Configurator",
+        subtitle: `eCommerce site for custom prints.`,
+        description: `Custom eCommerce site built on Vue, Nuxt, Vuetify, Node, and MongoDB. Features live preview and 3D rendering of custom products.`,
+        href: `https://secure.artisanhd.com`,
+        images: [
+          require.resolve("./src/assets/img/projects/artisanhd-1.jpg"),
+          require.resolve("./src/assets/img/projects/artisanhd-2.jpg"),
+          require.resolve("./src/assets/img/projects/artisanhd-3.jpg"),
+          require.resolve("./src/assets/img/projects/artisanhd-4.jpg"),
+        ],
+      },
+      {
+        title: "COSma Learning",
+        subtitle: `Online math courseware.`,
+        description: `Custom online math courseware. Built on top of IMathAS, using Vue, PHP, and MySQL. Features interactive lessons, homework, and assessments.`,
+        href: `https://cosmalearning.com`,
+        images: [
+          require.resolve("./src/assets/img/projects/cosma-1.jpg"),
+          require.resolve("./src/assets/img/projects/cosma-2.jpg"),
+          require.resolve("./src/assets/img/projects/cosma-3.jpg"),
+        ],
+      },
+      {
+        title: "MathCode",
+        subtitle: `Online math/JavaScript Tutorials`,
+        description: `Interactive tutorials for math and JavaScript. Built with Vue, Nuxt, and Bulma. Features live coding samples.`,
+        href: `https://mathcode.cosmalearning.com`,
+        images: [
+          require.resolve("./src/assets/img/projects/mathcode-1.jpg"),
+          require.resolve("./src/assets/img/projects/mathcode-2.jpg"),
+        ],
+      },
+    ].forEach(project => projects.addNode(project));
+
+    /**
      * Education
      */
     const degrees = addCollection("Degree");
