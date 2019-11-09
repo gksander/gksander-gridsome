@@ -10,7 +10,7 @@
       :key="i"
       class="flex -mx-2 items-center"
       :class="{
-        'mb-6': i !== $static.allTool.edges.length - 1,
+        'mb-4': i !== $static.allTool.edges.length - 1,
       }"
     >
       <div class="px-2 flex-none hidden sm:block">

@@ -6,16 +6,13 @@
       subtitle="Get in touch!"
     ></gks-section-title>
     <!-- Links -->
-    <a
+    <div
       v-for="(edge, i) in $static.allLink.edges"
       :key="i"
-      class="flex -mx-2 py-2 hover:bg-gray-200 items-center"
+      class="flex -mx-2 items-center"
       :class="{
-        'mb-1': i !== $static.allLink.edges.length - 1,
+        'mb-4': i !== $static.allLink.edges.length - 1,
       }"
-      :href="edge.node.href"
-      target="_blank"
-      rel="noopener"
     >
       <div class="px-2 flex-none hidden sm:block">
         <div class="shadow rounded-lg p-2 w-12 h-12">
@@ -27,16 +24,19 @@
         </div>
       </div>
       <div class="flex-grow px-2">
-        <div
+        <a
           v-html="edge.node.title"
-          class="font-bold text-primary-900 leading-tight"
-        ></div>
+          class="font-bold text-primary-900 leading-tight cursor-pointer hover:underline"
+          :href="edge.node.href"
+          target="_blank"
+          rel="noopener"
+        ></a>
         <div
           v-html="edge.node.subtitle"
           class="text-primary-800 leading-tight"
         ></div>
       </div>
-    </a>
+    </div>
   </div>
 </template>
 
