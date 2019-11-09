@@ -30,7 +30,7 @@
         <div class="text-primary-800 leading-tight mb-2">
           {{ edge.node.from }}
         </div>
-        <div class="text-gray-600" v-html="edge.node.description"></div>
+        <div class="text-gray-700" v-html="edge.node.description"></div>
       </div>
     </div>
   </div>

@@ -89,66 +89,6 @@ module.exports = function(api) {
       },
     ].forEach(tool => tools.addNode(tool));
 
-    // FrontEnd Tools
-    const frontendTools = addCollection("frontendTool");
-    [
-      {
-        title: "ES",
-        image: require.resolve("./src/assets/img/esnext.png"),
-        alt: "ESNext Logo",
-      },
-      {
-        title: "TypeScript",
-        image: require.resolve("./src/assets/img/ts.png"),
-        alt: "TypeScript Logo",
-      },
-      {
-        title: "Vue",
-        image: require.resolve("./src/assets/img/vue.png"),
-        alt: "Vue Logo",
-      },
-      {
-        title: "React",
-        image: require.resolve("./src/assets/img/react.png"),
-        alt: "React Logo",
-      },
-      {
-        title: "Redux",
-        image: require.resolve("./src/assets/img/redux.png"),
-        alt: "Redux Logo",
-      },
-    ].forEach(tool => frontendTools.addNode(tool));
-
-    // FrontEnd Tools
-    const backendTools = addCollection("backendTool");
-    [
-      {
-        title: "Node.js",
-        image: require.resolve("./src/assets/img/node.png"),
-        alt: "NodeJS Logo",
-      },
-      {
-        title: "Rails",
-        image: require.resolve("./src/assets/img/rails.png"),
-        alt: "Ruby on Rails Logo",
-      },
-      {
-        title: "GraphQL",
-        image: require.resolve("./src/assets/img/graphql.png"),
-        alt: "GraphQL Logo",
-      },
-      {
-        title: "MongoDB",
-        image: require.resolve("./src/assets/img/mongodb.png"),
-        alt: "MongoDB Logo",
-      },
-      {
-        title: "PostgreSQL",
-        image: require.resolve("./src/assets/img/pgsql.png"),
-        alt: "PostgreSQL Logo",
-      },
-    ].forEach(tool => backendTools.addNode(tool));
-
     /**
      * Education
      */

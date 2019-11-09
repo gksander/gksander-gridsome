@@ -29,7 +29,6 @@
         <div class="text-primary-800 leading-tight">
           {{ edge.node.subtitle }}
         </div>
-        <div class="text-gray-600" v-html="edge.node.description"></div>
       </div>
     </div>
   </div>

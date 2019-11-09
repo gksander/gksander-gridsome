@@ -15,6 +15,7 @@
       }"
       :href="edge.node.href"
       target="_blank"
+      rel="noopener"
     >
       <div class="px-2 flex-none hidden sm:block">
         <div class="shadow rounded-lg p-2 w-12 h-12">
