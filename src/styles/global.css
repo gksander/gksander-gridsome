@@ -8,3 +8,8 @@
 html {
   font-family: 'Raleway', sans-serif;
 }
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
