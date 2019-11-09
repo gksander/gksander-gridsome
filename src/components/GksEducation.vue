@@ -15,11 +15,13 @@
       }"
     >
       <div class="px-2 flex-none hidden sm:block">
-        <g-image
-          :src="edge.node.image"
-          alt="Degree logo"
-          class="border rounded-full p-1 w-12 h-12"
-        ></g-image>
+        <div class="shadow rounded-lg p-2 w-12 h-12">
+          <g-image
+            :src="edge.node.image"
+            alt="Degree logo"
+            class="w-full"
+          ></g-image>
+        </div>
       </div>
       <div class="flex-grow px-2">
         <div class="font-bold text-primary-900 leading-tight">

@@ -145,6 +145,43 @@ module.exports = function(api) {
         image: require.resolve("./src/assets/img/asu.png"),
       },
     ].forEach(degree => degrees.addNode(degree));
+
+    /**
+     * Social links
+     */
+    const links = addCollection("Link");
+    [
+      {
+        title: "gksander93@gmail.com",
+        subtitle: "By email",
+        href: "mailto:gksander93@gmail.com",
+        image: require.resolve("./src/assets/img/gmail.png"),
+      },
+      {
+        title: "linkedin.com/in/gksander",
+        subtitle: "On LinkedIn",
+        href: "https://www.linkedin.com/in/gksander/",
+        image: require.resolve("./src/assets/img/linkedin.png"),
+      },
+      {
+        title: "github.com/gksander",
+        subtitle: "On GitHub",
+        href: "https://github.com/gksander",
+        image: require.resolve("./src/assets/img/github.png"),
+      },
+      {
+        title: "twitter.com/gksander93",
+        subtitle: "On Twitter",
+        href: "https://twitter.com/gksander93",
+        image: require.resolve("./src/assets/img/twitter.png"),
+      },
+      {
+        title: "dev.to/gksander",
+        subtitle: "On Dev.to",
+        href: "https://dev.to/gksander",
+        image: require.resolve("./src/assets/img/devto.png"),
+      },
+    ].forEach(link => links.addNode(link));
   }); // End loadSources
 
   api.createPages(({ createPage }) => {
