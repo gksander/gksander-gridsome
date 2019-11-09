@@ -29,7 +29,7 @@ export default {
   },
 
   metaInfo: {
-    title: "Hello, world!",
+    title: "Grant Sander",
   },
 };
 </script>
