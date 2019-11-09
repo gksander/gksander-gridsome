@@ -43,22 +43,27 @@ module.exports = function(api) {
       {
         title: "HTML",
         image: require.resolve("./src/assets/img/html.png"),
+        alt: "HTML Logo",
       },
       {
         title: "JSX",
         image: require.resolve("./src/assets/img/jsx.png"),
+        alt: "JSX Logo",
       },
       {
         title: "CSS",
         image: require.resolve("./src/assets/img/css.png"),
+        alt: "CSS Logo",
       },
       {
         title: "Tailwind",
         image: require.resolve("./src/assets/img/tailwind.png"),
+        alt: "TailwindCSS Logo",
       },
       {
         title: "SASS",
         image: require.resolve("./src/assets/img/sass.png"),
+        alt: "SASS Logo",
       },
     ].forEach(tool => stylingTools.addNode(tool));
 
@@ -68,22 +73,27 @@ module.exports = function(api) {
       {
         title: "ES",
         image: require.resolve("./src/assets/img/esnext.png"),
+        alt: "ESNext Logo",
       },
       {
         title: "TypeScript",
         image: require.resolve("./src/assets/img/ts.png"),
+        alt: "TypeScript Logo",
       },
       {
         title: "Vue",
         image: require.resolve("./src/assets/img/vue.png"),
+        alt: "Vue Logo",
       },
       {
         title: "React",
         image: require.resolve("./src/assets/img/react.png"),
+        alt: "React Logo",
       },
       {
         title: "Redux",
         image: require.resolve("./src/assets/img/redux.png"),
+        alt: "Redux Logo",
       },
     ].forEach(tool => frontendTools.addNode(tool));
 
@@ -93,22 +103,27 @@ module.exports = function(api) {
       {
         title: "Node.js",
         image: require.resolve("./src/assets/img/node.png"),
+        alt: "NodeJS Logo",
       },
       {
         title: "Rails",
         image: require.resolve("./src/assets/img/rails.png"),
+        alt: "Ruby on Rails Logo",
       },
       {
         title: "GraphQL",
         image: require.resolve("./src/assets/img/graphql.png"),
+        alt: "GraphQL Logo",
       },
       {
         title: "MongoDB",
         image: require.resolve("./src/assets/img/mongodb.png"),
+        alt: "MongoDB Logo",
       },
       {
         title: "PostgreSQL",
         image: require.resolve("./src/assets/img/pgsql.png"),
+        alt: "PostgreSQL Logo",
       },
     ].forEach(tool => backendTools.addNode(tool));
   }); // End loadSources

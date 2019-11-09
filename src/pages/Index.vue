@@ -30,6 +30,7 @@ export default {
 
   metaInfo: {
     title: "Grant Sander",
+    meta: [{ name: "description", content: "Grant Sander's portfolio site" }],
   },
 };
 </script>

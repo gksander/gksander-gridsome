@@ -14,7 +14,11 @@
           :key="i"
           class="w-1/5 px-4 flex flex-col items-center"
         >
-          <g-image :src="edge.node.image" class="mb-1"></g-image>
+          <g-image
+            :src="edge.node.image"
+            :alt="edge.node.alt"
+            class="mb-1"
+          ></g-image>
           <div v-html="edge.node.title" class="text-primary-800"></div>
         </div>
       </div>
@@ -28,7 +32,11 @@
           :key="i"
           class="w-1/5 px-4 flex flex-col items-center"
         >
-          <g-image :src="edge.node.image" class="mb-1"></g-image>
+          <g-image
+            :src="edge.node.image"
+            :alt="edge.node.alt"
+            class="mb-1"
+          ></g-image>
           <div v-html="edge.node.title" class="text-primary-800"></div>
         </div>
       </div>
@@ -42,7 +50,11 @@
           :key="i"
           class="w-1/5 px-4 flex flex-col items-center"
         >
-          <g-image :src="edge.node.image" class="mb-1"></g-image>
+          <g-image
+            :src="edge.node.image"
+            :alt="edge.node.alt"
+            class="mb-1"
+          ></g-image>
           <div v-html="edge.node.title" class="text-primary-800"></div>
         </div>
       </div>
@@ -61,6 +73,7 @@ query {
       node {
         title,
         image (width: 65, height: 65, fit: contain, background: "transparent")
+        alt
       }
     }
   }
@@ -69,6 +82,7 @@ query {
       node {
         title,
         image (width: 65, height: 65, fit: contain, background: "transparent")
+        alt
       }
     }
   }
@@ -77,6 +91,7 @@ query {
       node {
         title,
         image (width: 65, height: 65, fit: contain, background: "transparent")
+        alt
       }
     }
   }
