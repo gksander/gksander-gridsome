@@ -1,21 +1,33 @@
 <template>
   <Layout>
     <!-- Header image/title -->
-    <div class="flex flex-col items-center p-5 text-primary-900 bg-primary-100">
-      <g-image
-        src="~/assets/img/headshot.jpg"
-        alt="Grant's headshot"
-        class="h-24 w-24 rounded-full shadow-md"
-      />
-      <h1 class="text-5xl font-thin">Grant Sander</h1>
-      <h2 class="text-2xl leading-none">Fullstack Developer</h2>
-      <h3 class="text-2xl leading-tight text-primary-400">Web and Mobile</h3>
-    </div>
+    <gks-title></gks-title>
+    <gks-experience></gks-experience>
+    <gks-tools></gks-tools>
+    <gks-projects></gks-projects>
+    <gks-education></gks-education>
+    <gks-contact></gks-contact>
   </Layout>
 </template>
 
 <script>
+import GksTitle from "~/components/GksTitle";
+import GksExperience from "~/components/GksExperience";
+import GksTools from "~/components/GksTools";
+import GksProjects from "~/components/GksProjects";
+import GksEducation from "~/components/GksEducation";
+import GksContact from "~/components/GksContact";
+
 export default {
+  components: {
+    GksTitle,
+    GksExperience,
+    GksTools,
+    GksProjects,
+    GksEducation,
+    GksContact,
+  },
+
   metaInfo: {
     title: "Hello, world!",
   },
