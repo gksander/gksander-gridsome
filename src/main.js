@@ -4,7 +4,7 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import GksSectionTitle from "~/components/GksSectionTitle";
 import "./styles/global.css";
-require("typeface-open-sans");
+require("typeface-raleway");
 
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
