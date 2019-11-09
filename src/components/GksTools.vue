@@ -5,58 +5,31 @@
       title="Preferred Tools"
       subtitle="Tools I like and regularly use"
     ></gks-section-title>
-    <!-- Styling Tools -->
-    <div class="mb-3">
-      <div class="font-bold text-primary-900 mb-2">Markup & Styling</div>
-      <div class="flex flex-wrap -mx-4">
-        <div
-          v-for="(edge, i) in $static.allStylingTool.edges"
-          :key="i"
-          class="w-1/5 px-4 flex flex-col items-center"
-        >
+    <div
+      v-for="(edge, i) in $static.allTool.edges"
+      :key="i"
+      class="flex -mx-2 items-center"
+      :class="{
+        'mb-6': i !== $static.allTool.edges.length - 1,
+      }"
+    >
+      <div class="px-2 flex-none hidden sm:block">
+        <div class="shadow rounded-lg p-2 w-12 h-12">
           <g-image
             :src="edge.node.image"
             :alt="edge.node.alt"
-            class="mb-1"
+            class="w-full"
           ></g-image>
-          <div v-html="edge.node.title" class="text-primary-800"></div>
         </div>
       </div>
-    </div>
-    <!-- Frontend Tools -->
-    <div class="mb-3">
-      <div class="font-bold text-primary-900 mb-2">JavaScript (Front End)</div>
-      <div class="flex flex-wrap -mx-4">
-        <div
-          v-for="(edge, i) in $static.allFrontendTool.edges"
-          :key="i"
-          class="w-1/5 px-4 flex flex-col items-center"
-        >
-          <g-image
-            :src="edge.node.image"
-            :alt="edge.node.alt"
-            class="mb-1"
-          ></g-image>
-          <div v-html="edge.node.title" class="text-primary-800"></div>
+      <div class="flex-grow px-2">
+        <div class="font-bold text-primary-900 leading-tight">
+          {{ edge.node.title }}
         </div>
-      </div>
-    </div>
-    <!-- Backend Tools -->
-    <div class="mb-3">
-      <div class="font-bold text-primary-900 mb-2">Backend</div>
-      <div class="flex flex-wrap -mx-4">
-        <div
-          v-for="(edge, i) in $static.allBackendTool.edges"
-          :key="i"
-          class="w-1/5 px-4 flex flex-col items-center"
-        >
-          <g-image
-            :src="edge.node.image"
-            :alt="edge.node.alt"
-            class="mb-1"
-          ></g-image>
-          <div v-html="edge.node.title" class="text-primary-800"></div>
+        <div class="text-primary-800 leading-tight">
+          {{ edge.node.subtitle }}
         </div>
+        <div class="text-gray-600" v-html="edge.node.description"></div>
       </div>
     </div>
   </div>
@@ -68,28 +41,11 @@ export default {};
 
 <static-query>
 query {
-  allStylingTool (order: ASC) {
+  allTool (order: ASC) {
     edges {
       node {
-        title,
-        image (width: 65, height: 65, fit: contain, background: "transparent")
-        alt
-      }
-    }
-  }
-  allFrontendTool (order: ASC) {
-    edges {
-      node {
-        title,
-        image (width: 65, height: 65, fit: contain, background: "transparent")
-        alt
-      }
-    }
-  }
-  allBackendTool (order: ASC) {
-    edges {
-      node {
-        title,
+        title
+        subtitle
         image (width: 65, height: 65, fit: contain, background: "transparent")
         alt
       }

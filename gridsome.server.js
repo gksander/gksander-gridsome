@@ -37,35 +37,57 @@ module.exports = function(api) {
     /**
      * Tools
      */
-    // Styling Tools
-    const stylingTools = addCollection("stylingTool");
+    const tools = addCollection("Tool");
     [
       {
         title: "HTML",
+        subtitle: "HTML and various templating languages.",
         image: require.resolve("./src/assets/img/html.png"),
         alt: "HTML Logo",
       },
       {
-        title: "JSX",
-        image: require.resolve("./src/assets/img/jsx.png"),
-        alt: "JSX Logo",
-      },
-      {
         title: "CSS",
+        subtitle: `CSS, SASS, TailwindCSS, and Bootstrap.`,
         image: require.resolve("./src/assets/img/css.png"),
         alt: "CSS Logo",
       },
       {
-        title: "Tailwind",
-        image: require.resolve("./src/assets/img/tailwind.png"),
-        alt: "TailwindCSS Logo",
+        title: "JavaScript & TypeScript",
+        subtitle: `JavaScript and TypeScript.`,
+        image: require.resolve("./src/assets/img/ts.png"),
+        alt: "TypeScript Logo",
       },
       {
-        title: "SASS",
-        image: require.resolve("./src/assets/img/sass.png"),
-        alt: "SASS Logo",
+        title: "Vue.js",
+        subtitle: `Vue, Vuex, Vue Router, Nuxt.js, Gridsome, Vuetify.`,
+        image: require.resolve("./src/assets/img/vue.png"),
+        alt: "Vue Logo",
       },
-    ].forEach(tool => stylingTools.addNode(tool));
+      {
+        title: "React.js",
+        subtitle: `React, React Native, Redux, React Router, Next.js.`,
+        image: require.resolve("./src/assets/img/react.png"),
+        alt: "React Logo",
+      },
+      {
+        title: "Node.js",
+        subtitle: `Node.js, MongoDB & Mongoose, Express, Strapi.`,
+        image: require.resolve("./src/assets/img/node.png"),
+        alt: "Node Logo",
+      },
+      {
+        title: "Ruby on Rails",
+        subtitle: `Ruby on Rails, PostgreSQL, Devise, and CanCan.`,
+        image: require.resolve("./src/assets/img/rails.png"),
+        alt: "Rails Logo",
+      },
+      {
+        title: "GraphQL",
+        subtitle: `GraphQL-Ruby, Apollo Client, and Vue Apollo.`,
+        image: require.resolve("./src/assets/img/graphql.png"),
+        alt: "GraphQL Logo",
+      },
+    ].forEach(tool => tools.addNode(tool));
 
     // FrontEnd Tools
     const frontendTools = addCollection("frontendTool");
