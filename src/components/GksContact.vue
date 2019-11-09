@@ -1,6 +1,16 @@
 <template>
   <div class="p-5">
-    <p>Contact</p>
+    <!-- Title -->
+    <gks-section-title
+      title="Contact"
+      subtitle="Get in touch!"
+    ></gks-section-title>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda cum
+      delectus deserunt distinctio eaque, esse eum excepturi facilis ipsam nemo
+      odit, officia ratione reiciendis reprehenderit sequi similique temporibus
+      tenetur.
+    </div>
   </div>
 </template>
 
