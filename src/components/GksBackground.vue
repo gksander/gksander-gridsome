@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5">
+  <div class="p-5 mt-5">
     <!-- Title -->
     <gks-section-title
       title="Background"
