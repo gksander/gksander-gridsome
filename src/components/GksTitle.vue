@@ -34,7 +34,7 @@
       <div v-for="link in links" :key="link.to" class="p-1 w-1/2 sm:w-1/5">
         <div
           class="px-3 py-1 cursor-pointer text-center w-full border rounded text-white overflow-hidden hover:bg-gray-600"
-          style="text-overflow: ellipsis"
+          style="text-overflow: ellipsis; pointer-events: none;"
           @click="onLinkClick(link)"
         >
           {{ link.title }}
