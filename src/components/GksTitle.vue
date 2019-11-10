@@ -32,7 +32,7 @@
     <!-- Nav -->
     <div class="px-6 -mt-8">
       <div
-        class="flex flex-row flex-wrap justify-around px-3 py-2 overflow-x-auto -mx-1 shadow-md border rounded-lg bg-white"
+        class="flex flex-row flex-wrap justify-around px-3 py-2 overflow-x-auto -mx-1 shadow-lg border rounded-lg bg-white"
       >
         <div v-for="link in links" :key="link.to" class="p-1 w-1/2 sm:w-1/5">
           <button
