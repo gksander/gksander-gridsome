@@ -1,21 +1,31 @@
 <template>
   <div class="bg-primary-800">
-    <div class="flex flex-col items-center p-6 text-white">
-      <g-image
-        src="~/assets/img/headshot.jpg"
-        alt="Grant's headshot"
-        class="rounded-full shadow-md"
-        width="150"
-        height="150"
-        quality="95"
-      />
-      <h1 class="text-5xl sm:text-6xl font-thin text-center">Grant Sander</h1>
-      <h2 class="text-3xl sm:text-4xl font-thin leading-none text-gray-300">
-        Fullstack Developer
-      </h2>
-      <h3 class="text-2xl sm:text-3xl font-thin leading-tight text-gray-300">
-        Web and Mobile
-      </h3>
+    <div class="flex flex-row flex-wrap p-5 -mx-3 items-center">
+      <div class="px-3 w-full sm:w-auto flex justify-center">
+        <g-image
+          src="~/assets/img/headshot.jpg"
+          alt="Grant's headshot"
+          class="rounded-full shadow-xl"
+          width="175"
+          height="175"
+          quality="95"
+        />
+      </div>
+      <div class="px-3 flex-grow text-white">
+        <h1 class="text-5xl font-thin mb-1 text-center sm:text-left">
+          Grant Sander
+        </h1>
+        <h2
+          class="text-3xl font-thin leading-none text-gray-300 text-center sm:text-left"
+        >
+          Fullstack Developer
+        </h2>
+        <h3
+          class="text-2xl font-thin leading-tight text-gray-300 text-center sm:text-left"
+        >
+          Web and Mobile
+        </h3>
+      </div>
     </div>
     <!-- Nav -->
     <div
