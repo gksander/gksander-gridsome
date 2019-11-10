@@ -4,6 +4,7 @@
     <gks-section-title
       title="Projects"
       subtitle="Some projects I've worked on."
+      id="projects"
     ></gks-section-title>
     <div
       v-for="(edge, i) in $static.allProject.edges"

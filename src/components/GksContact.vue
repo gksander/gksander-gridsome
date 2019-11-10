@@ -4,6 +4,7 @@
     <gks-section-title
       title="Contact"
       subtitle="Get in touch!"
+      id="contact"
     ></gks-section-title>
     <!-- Links -->
     <div

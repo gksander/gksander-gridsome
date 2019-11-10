@@ -4,6 +4,7 @@
     <gks-section-title
       title="Education"
       subtitle="My educational background."
+      id="education"
     ></gks-section-title>
 
     <div

@@ -3,7 +3,8 @@
     <!-- Title -->
     <gks-section-title
       title="Experience"
-      subtitle="Where I've been and what I've done."
+      subtitle="Where I've been."
+      id="experience"
     ></gks-section-title>
     <!-- List out experience items -->
     <div>

@@ -4,6 +4,7 @@
     <gks-section-title
       title="Background"
       subtitle="A little about me."
+      id="background"
     ></gks-section-title>
     <div class="text-gray-700">
       <p class="mb-3">
