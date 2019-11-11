@@ -1,28 +1,23 @@
 <template>
   <div
-    :class="{
-      fixed: enlarged,
-      'inset-0': enlarged,
-      flex: enlarged,
-      'flex-col': enlarged,
-      'bg-owhite': enlarged,
-      'items-center': enlarged,
-      'justify-center': enlarged,
-      'z-10': enlarged,
-      'px-8': enlarged,
-      'px-2': !enlarged,
-    }"
+    :class="
+      enlarged
+        ? [
+            'fixed',
+            'inset-0',
+            'flex',
+            'flex-col',
+            'bg-owhite',
+            'items-center',
+            'justify-center',
+            'z-10',
+            'px-8',
+          ]
+        : ['px-2']
+    "
     @click="onBgClick"
   >
     <div class="flex justify-center mb-3 relative">
-      <!--      <g-image-->
-      <!--        v-for="(image, i) in images"-->
-      <!--        :key="i"-->
-      <!--        :src="image"-->
-      <!--        v-show="i === currIndex"-->
-      <!--        @click.stop="enlarged = true"-->
-      <!--        class="cursor-pointer border rounded-lg"-->
-      <!--      ></g-image>-->
       <transition
         name="fade"
         mode="out-in"
