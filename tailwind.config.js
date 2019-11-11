@@ -7,6 +7,9 @@ module.exports = {
         primary: {
           ...colors.blue,
         },
+        owhite: {
+          default: "rgba(255,255,255, 0.95)",
+        },
       },
     },
     container: {

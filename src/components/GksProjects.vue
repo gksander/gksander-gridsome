@@ -9,38 +9,39 @@
     <div
       v-for="(edge, i) in $static.allProject.edges"
       :key="i"
+      class="flex flex-row flex-wrap -mx-2"
       :class="{
         'mb-6': i !== $static.allProject.edges.length - 1,
       }"
     >
-      <a
-        class="font-bold text-primary-900 leading-tight cursor-pointer hover:underline"
-        :href="edge.node.href"
-        target="_blank"
-        rel="noopener"
-      >
-        {{ edge.node.title }}
-      </a>
-      <div class="text-primary-800 leading-tight mb-2">
-        {{ edge.node.subtitle }}
-      </div>
-      <div class="text-gray-700 mb-2" v-html="edge.node.description"></div>
-      <!-- Images -->
-      <div class="flex flex-row flex-wrap -mx-2" v-if="false">
-        <div
-          class="p-1 w-1/2 smz:w-1/4"
-          v-for="(image, j) in edge.node.images"
-          :key="j"
+      <div class="px-2 w-full sm:w-7/12">
+        <a
+          class="font-bold text-primary-900 leading-tight cursor-pointer hover:underline"
+          :href="edge.node.href"
+          target="_blank"
+          rel="noopener"
         >
-          <g-image :src="image" class="w-full"></g-image>
+          {{ edge.node.title }}
+        </a>
+        <div class="text-primary-800 leading-tight mb-2">
+          {{ edge.node.subtitle }}
         </div>
+        <div class="text-gray-700 mb-2" v-html="edge.node.description"></div>
+      </div>
+      <div class="px-2 w-full sm:w-5/12">
+        <!-- Images, part two... -->
+        <gks-project-images :images="edge.node.images"></gks-project-images>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import GksProjectImages from "./GksProjectImages";
+
+export default {
+  components: { GksProjectImages },
+};
 </script>
 
 <static-query>
@@ -52,7 +53,7 @@ query {
         subtitle
         description
         href
-        images (width: 350, quality: 95)
+        images (width: 650, quality: 100)
       }
     }
   }

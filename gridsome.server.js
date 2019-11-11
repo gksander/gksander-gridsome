@@ -107,6 +107,17 @@ module.exports = function(api) {
         ],
       },
       {
+        title: "EulogyBooks",
+        subtitle: `eCommerce site for "Eulogy Books`,
+        description: `Collaborative site where users upload photos to a shared "book" that is programmatically generated. Built on Vue, Nuxt, Vuetify, Node, and MongoDB.`,
+        href: `https://make.eulogybooks.com`,
+        images: [
+          require.resolve("./src/assets/img/projects/eulogybooks-1.jpg"),
+          require.resolve("./src/assets/img/projects/eulogybooks-2.jpg"),
+          require.resolve("./src/assets/img/projects/eulogybooks-3.jpg"),
+        ],
+      },
+      {
         title: "COSma Learning",
         subtitle: `Online math courseware.`,
         description: `Custom online math courseware. Built on top of IMathAS, using Vue, PHP, and MySQL. Features interactive lessons, homework, and assessments.`,
