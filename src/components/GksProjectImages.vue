@@ -18,19 +18,15 @@
     @click="onBgClick"
   >
     <div class="flex justify-center mb-3 relative">
-      <transition
-        name="fade"
-        mode="out-in"
+      <g-image
         v-for="(image, i) in images"
-        :key="i"
-      >
-        <g-image
-          :src="image"
-          v-show="i === currIndex"
-          @click.stop="enlarged = true"
-          class="cursor-pointer border rounded-lg w-full"
-        ></g-image>
-      </transition>
+        :key="image.alt"
+        :src="image.image"
+        :alt="image.alt"
+        v-show="i === currIndex"
+        @click.stop="enlarged = true"
+        class="cursor-pointer border rounded-lg w-full"
+      ></g-image>
       <!-- Left Icon -->
       <button
         class="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900"
@@ -42,6 +38,7 @@
           marginTop: `${-buttonSize / 2}px`,
         }"
         @click.stop="incrementIndex(-1)"
+        aria-label="Previous"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,6 +67,7 @@
           marginTop: `${-buttonSize / 2}px`,
         }"
         @click.stop="incrementIndex(1)"
+        aria-label="Next"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +92,7 @@
       v-if="enlarged"
       class="absolute p-2 top-0 right-0 mr-6 mt-6 rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900"
       @click="enlarged = false"
+      aria-label="close"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

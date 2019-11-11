@@ -100,10 +100,22 @@ module.exports = function(api) {
         description: `Custom eCommerce site built on Vue, Nuxt, Vuetify, Node, and MongoDB. Features live preview and 3D rendering of custom products.`,
         href: `https://secure.artisanhd.com`,
         images: [
-          require.resolve("./src/assets/img/projects/artisanhd-1.jpg"),
-          require.resolve("./src/assets/img/projects/artisanhd-2.jpg"),
-          require.resolve("./src/assets/img/projects/artisanhd-3.jpg"),
-          require.resolve("./src/assets/img/projects/artisanhd-4.jpg"),
+          {
+            image: require.resolve("./src/assets/img/projects/artisanhd-1.jpg"),
+            alt: "Alt 1...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/artisanhd-2.jpg"),
+            alt: "Alt 2...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/artisanhd-3.jpg"),
+            alt: "Alt 3...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/artisanhd-4.jpg"),
+            alt: "Alt 4...",
+          },
         ],
       },
       {
@@ -112,9 +124,24 @@ module.exports = function(api) {
         description: `Collaborative site where users upload photos to a shared "book" that is programmatically generated. Built on Vue, Nuxt, Vuetify, Node, and MongoDB.`,
         href: `https://make.eulogybooks.com`,
         images: [
-          require.resolve("./src/assets/img/projects/eulogybooks-1.jpg"),
-          require.resolve("./src/assets/img/projects/eulogybooks-2.jpg"),
-          require.resolve("./src/assets/img/projects/eulogybooks-3.jpg"),
+          {
+            image: require.resolve(
+              "./src/assets/img/projects/eulogybooks-1.jpg",
+            ),
+            alt: "Alt 1..",
+          },
+          {
+            image: require.resolve(
+              "./src/assets/img/projects/eulogybooks-2.jpg",
+            ),
+            alt: "Alt 2..",
+          },
+          {
+            image: require.resolve(
+              "./src/assets/img/projects/eulogybooks-3.jpg",
+            ),
+            alt: "Alt 3..",
+          },
         ],
       },
       {
@@ -123,9 +150,18 @@ module.exports = function(api) {
         description: `Custom online math courseware. Built on top of IMathAS, using Vue, PHP, and MySQL. Features interactive lessons, homework, and assessments.`,
         href: `https://cosmalearning.com`,
         images: [
-          require.resolve("./src/assets/img/projects/cosma-1.jpg"),
-          require.resolve("./src/assets/img/projects/cosma-2.jpg"),
-          require.resolve("./src/assets/img/projects/cosma-3.jpg"),
+          {
+            image: require.resolve("./src/assets/img/projects/cosma-1.jpg"),
+            alt: "Alt 1...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/cosma-2.jpg"),
+            alt: "Alt 2...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/cosma-3.jpg"),
+            alt: "Alt 3...",
+          },
         ],
       },
       {
@@ -134,8 +170,14 @@ module.exports = function(api) {
         description: `Interactive tutorials for math and JavaScript. Built with Vue, Nuxt, and Bulma. Features live coding samples.`,
         href: `https://mathcode.cosmalearning.com`,
         images: [
-          require.resolve("./src/assets/img/projects/mathcode-1.jpg"),
-          require.resolve("./src/assets/img/projects/mathcode-2.jpg"),
+          {
+            image: require.resolve("./src/assets/img/projects/mathcode-1.jpg"),
+            alt: "Alt 1...",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/mathcode-2.jpg"),
+            alt: "Alt 2...",
+          },
         ],
       },
     ].forEach(project => projects.addNode(project));

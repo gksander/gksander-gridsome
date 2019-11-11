@@ -53,7 +53,10 @@ query {
         subtitle
         description
         href
-        images (width: 650, height: 650, quality: 100, fit: contain, background: "white")
+        images {
+          image (width: 650, height: 650, quality: 100, fit: contain, background: "white")
+          alt
+        }
       }
     }
   }
