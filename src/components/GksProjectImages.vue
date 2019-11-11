@@ -24,7 +24,7 @@
         :src="image.image"
         :alt="image.alt"
         v-show="i === currIndex"
-        @click.stop="enlarged = true"
+        @click.stop="enlarged = !enlarged"
         class="cursor-pointer border rounded-lg w-full"
       ></g-image>
       <!-- Left Icon -->
