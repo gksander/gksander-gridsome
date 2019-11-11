@@ -28,7 +28,7 @@
           :src="image"
           v-show="i === currIndex"
           @click.stop="enlarged = true"
-          class="cursor-pointer border rounded-lg"
+          class="cursor-pointer border rounded-lg w-full"
         ></g-image>
       </transition>
       <!-- Left Icon -->
