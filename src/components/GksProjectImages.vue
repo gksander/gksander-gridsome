@@ -15,14 +15,27 @@
     @click="onBgClick"
   >
     <div class="flex justify-center mb-3 relative">
-      <g-image
+      <!--      <g-image-->
+      <!--        v-for="(image, i) in images"-->
+      <!--        :key="i"-->
+      <!--        :src="image"-->
+      <!--        v-show="i === currIndex"-->
+      <!--        @click.stop="enlarged = true"-->
+      <!--        class="cursor-pointer border rounded-lg"-->
+      <!--      ></g-image>-->
+      <transition
+        name="fade"
+        mode="out-in"
         v-for="(image, i) in images"
         :key="i"
-        :src="image"
-        v-show="i === currIndex"
-        @click.stop="enlarged = true"
-        class="cursor-pointer border rounded-lg"
-      ></g-image>
+      >
+        <g-image
+          :src="image"
+          v-show="i === currIndex"
+          @click.stop="enlarged = true"
+          class="cursor-pointer border rounded-lg"
+        ></g-image>
+      </transition>
       <!-- Left Icon -->
       <button
         class="absolute flex justify-center items-center border bg-white rounded-full hover:shadow-lg hover:bg-primary-100 text-primary-900"
