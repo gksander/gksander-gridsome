@@ -119,6 +119,26 @@ module.exports = function(api) {
         ],
       },
       {
+        title: "Personal PokeDex",
+        subtitle: `Static site with over 700 optimized pages.`,
+        description: `Side project using Gridsome.js to generate a static site full of Pokemon information. Parses Pokemon data from CSV into a GraphQL data layer and generates highly-optimized pages for each.`,
+        href: `https://pokedex.gksander.com`,
+        images: [
+          {
+            image: require.resolve("./src/assets/img/projects/pokedex-1.png"),
+            alt: "Pokedex homepage",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/pokedex-2.png"),
+            alt: "Pokemon page",
+          },
+          {
+            image: require.resolve("./src/assets/img/projects/pokedex-3.png"),
+            alt: "Alt 3...",
+          },
+        ],
+      },
+      {
         title: "EulogyBooks",
         subtitle: `eCommerce site for "Eulogy Books`,
         description: `Collaborative site where users upload photos to a shared "book" that is programmatically generated. Built on Vue, Nuxt, Vuetify, Node, and MongoDB.`,
